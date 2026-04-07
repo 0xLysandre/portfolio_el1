@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dan'Elec – Dany Dupin Électricien à Angoulême (16) | Électricité, Chauffage, Portails</title>
+<meta name="description" content="Dan'Elec – Dany Dupin, électricien à Angoulême en Charente. Installation électrique, chauffage, climatisation, pompes à chaleur et automatismes de portails. Devis gratuit." />
+<meta name="keywords" content="électricien Angoulême, artisans électriciens Charente, dépannage électrique, pose de portail automatique, chauffage et climatisation maison, pompe à chaleur Charente" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          brand: { 50:'#eff6ff',100:'#dbeafe',500:'#1e60c4',600:'#1750a8',700:'#103f86',900:'#0a2a5c' },
+          accent: { 500:'#f59410', 600:'#e07b00' }
+        },
+        fontFamily: { sans: ['Inter','system-ui','sans-serif'] }
+      }
+    }
+  }
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; }
+  .hero-bg {
+    background:
+      linear-gradient(135deg, rgba(10,42,92,0.92) 0%, rgba(23,80,168,0.85) 100%),
+      url('https://images.unsplash.com/photo-1565608087341-404b25492fee?auto=format&fit=crop&w=1600&q=60') center/cover;
+  }
+</style>
+</head>
+<body class="text-slate-800 bg-white antialiased">
+
+<!-- HEADER -->
+<header class="fixed top-0 inset-x-0 bg-white/95 backdrop-blur shadow-sm z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+    <a href="#accueil" class="flex items-center gap-2">
+      <div class="w-9 h-9 rounded-lg bg-brand-600 text-white grid place-items-center font-bold">D</div>
+      <div class="leading-tight">
+        <p class="font-extrabold text-brand-900">Dan'Elec</p>
+        <p class="text-xs text-slate-500">Dany Dupin Électricien</p>
+      </div>
+    </a>
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-700">
+      <a href="#accueil" class="hover:text-brand-600">Accueil</a>
+      <a href="#services" class="hover:text-brand-600">Services</a>
+      <a href="#apropos" class="hover:text-brand-600">À propos</a>
+      <a href="#contact" class="hover:text-brand-600">Contact</a>
+    </nav>
+    <a href="tel:+33000000000" class="hidden sm:inline-flex items-center gap-2 bg-accent-500 hover:bg-accent-600 text-white font-semibold px-4 py-2 rounded-lg shadow-sm transition">
+      📞 Appeler
+    </a>
+    <button id="menuBtn" class="md:hidden text-2xl text-brand-900" aria-label="Menu">☰</button>
+  </div>
+  <div id="mobileMenu" class="hidden md:hidden border-t bg-white">
+    <nav class="px-4 py-3 flex flex-col gap-3 text-slate-700">
+      <a href="#accueil">Accueil</a>
+      <a href="#services">Services</a>
+      <a href="#apropos">À propos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="accueil" class="hero-bg text-white pt-32 pb-24">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+    <div>
+      <span class="inline-block bg-white/10 border border-white/20 text-white text-xs uppercase tracking-wider px-3 py-1 rounded-full mb-5">Artisan électricien à Angoulême • Charente (16)</span>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-5">
+        Votre électricien de confiance à <span class="text-accent-500">Angoulême</span>
+      </h1>
+      <p class="text-lg text-blue-100 mb-8 max-w-xl">
+        Dan'Elec – Dany Dupin vous accompagne pour tous vos travaux d'électricité, de chauffage, de climatisation et d'automatisme de portails. Un service local, rapide et soigné.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#contact" class="bg-accent-500 hover:bg-accent-600 text-white font-semibold px-6 py-3 rounded-lg shadow-lg transition">Demandez un devis gratuit</a>
+        <a href="tel:+33000000000" class="bg-white/10 hover:bg-white/20 border border-white/30 text-white font-semibold px-6 py-3 rounded-lg transition">📞 Nous appeler</a>
+      </div>
+      <div class="mt-8 flex flex-wrap gap-6 text-sm text-blue-100">
+        <span>✓ Devis gratuit</span>
+        <span>✓ Intervention rapide</span>
+        <span>✓ Travail soigné</span>
+      </div>
+    </div>
+    <div class="hidden lg:block">
+      <div class="bg-white/10 backdrop-blur border border-white/20 rounded-2xl p-8">
+        <h3 class="text-xl font-bold mb-4">Une demande urgente ?</h3>
+        <p class="text-blue-100 mb-6">Contactez-nous pour un dépannage électrique ou un conseil. Nous intervenons dans tout le secteur d'Angoulême et de la Charente.</p>
+        <div class="space-y-3 text-sm">
+          <div class="flex items-center gap-3"><span class="text-accent-500 text-xl">📍</span> Angoulême, 16000 – Charente</div>
+          <div class="flex items-center gap-3"><span class="text-accent-500 text-xl">📞</span> Téléphone sur demande</div>
+          <div class="flex items-center gap-3"><span class="text-accent-500 text-xl">⏱</span> Réponse rapide en semaine</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="py-20 bg-slate-50">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-900 mb-6">Dan'Elec, l'artisan électricien proche de chez vous</h2>
+    <p class="text-lg text-slate-600 leading-relaxed">
+      Installé à Angoulême, Dan'Elec accompagne les particuliers, propriétaires et gestionnaires de biens
+      en Charente pour tous leurs projets électriques. De la simple mise aux normes au chauffage, en passant
+      par la motorisation de portail, vous bénéficiez d'un interlocuteur unique, à l'écoute et de proximité.
+    </p>
+    <div class="grid sm:grid-cols-3 gap-6 mt-12">
+      <div class="bg-white p-6 rounded-xl shadow-sm">
+        <div class="text-3xl mb-2">⚡</div>
+        <h3 class="font-bold text-brand-900">Électricité</h3>
+        <p class="text-sm text-slate-600 mt-2">Installation, rénovation, dépannage et mise aux normes.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-sm">
+        <div class="text-3xl mb-2">🌡️</div>
+        <h3 class="font-bold text-brand-900">Chauffage & clim</h3>
+        <p class="text-sm text-slate-600 mt-2">Pompes à chaleur, climatisation et chauffage performant.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-sm">
+        <div class="text-3xl mb-2">🚪</div>
+        <h3 class="font-bold text-brand-900">Automatismes</h3>
+        <p class="text-sm text-slate-600 mt-2">Pose, motorisation et réparation de portails et portes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="py-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-14">
+      <p class="text-accent-600 font-semibold uppercase tracking-wider text-sm">Nos services</p>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-900 mt-2">Des solutions complètes pour votre maison</h2>
+      <p class="mt-4 text-slate-600 max-w-2xl mx-auto">Découvrez l'ensemble des prestations proposées par votre électricien à Angoulême.</p>
+    </div>
+
+    <div class="grid lg:grid-cols-3 gap-8">
+      <!-- Service 1 -->
+      <article class="bg-white border border-slate-200 rounded-2xl p-8 shadow-sm hover:shadow-lg transition">
+        <div class="w-14 h-14 rounded-xl bg-brand-50 text-brand-600 grid place-items-center text-2xl mb-5">⚡</div>
+        <h3 class="text-xl font-bold text-brand-900 mb-3">Électricité domestique</h3>
+        <p class="text-slate-600 mb-3">De la simple prise à la rénovation complète d'un logement, nous réalisons tous vos travaux d'électricité dans le respect des normes en vigueur.</p>
+        <p class="text-slate-600 mb-5">Une intervention propre, sécurisée et adaptée à vos besoins, pour un confort durable au quotidien.</p>
+        <ul class="space-y-2 text-sm text-slate-700">
+          <li class="flex gap-2"><span class="text-accent-500">✓</span> Installation électrique neuve</li>
+          <li class="flex gap-2"><span class="text-accent-500">✓</span> Rénovation et mise aux normes</li>
+          <li class="flex gap-2"><span class="text-accent-500">✓</span> Dépannage électrique rapide</li>
+          <li class="flex gap-2"><span class="text-accent-500">✓</span> Tableau électrique et disjoncteurs</li>
+          <li class="flex gap-2"><span class="text-accent-500">✓</span> Éclairage intérieur et extérieur</li>
+          <li class="flex gap-2"><span class="text-accent-500">✓</span> Conseils personnalisés</li>
+        </ul>
+      </article>
+
+      <!-- Service 2 -->
+      <article class="bg-white border border-slate-200 rounded-2xl p-8 shadow-sm hover:shadow-lg transition">
+        <div class="w-14 h-14 rounded-xl bg-brand-50 text-brand-600 grid place-items-center text-2xl mb-5">🌡️</div>
+        <h3 class="text-xl font-bold text-brand-900 mb-3">Chauffage, climatisation & pompes à chaleur</h3>
+        <p class="text-slate-600 mb-3">Améliorez votre confort tout en maîtrisant votre consommation d'énergie. Nous installons des systèmes performants adaptés à votre habitation.</p>
+        <p class="text-slate-600 mb-5">Des solutions modernes pour chauffer ou rafraîchir votre maison toute l'année.</p>
+        <ul class="space-y-2 text-sm text-slate-700">
+          <li class="flex gap-2"><span class="text-accent-500">✓</span> Pose de pompe à chaleur</li>
+          <li class="flex gap-2"><span class="text-accent-500">✓</span> Climatisation réversible</li>
+          <li class="flex gap-2"><span class="text-accent-500">✓</span> Radiateurs et plancher chauffant</li>
+          <li class="flex gap-2"><span class="text-accent-500">✓</span> Entretien et dépannage</li>
+          <li class="flex gap-2"><span class="text-accent-500">✓</span> Économies d'énergie</li>
+          <li class="flex gap-2"><span class="text-accent-500">✓</span> Étude personnalisée</li>
+        </ul>
+      </article>
+
+      <!-- Service 3 -->
+      <article class="bg-white border border-slate-200 rounded-2xl p-8 shadow-sm hover:shadow-lg transition">
+        <div class="w-14 h-14 rounded-xl bg-brand-50 text-brand-600 grid place-items-center text-2xl mb-5">🚪</div>
+        <h3 class="text-xl font-bold text-brand-900 mb-3">Automatismes de portails et portes</h3>
+        <p class="text-slate-600 mb-3">Gagnez en confort et en sécurité grâce à la motorisation de votre portail ou de votre porte de garage. Nous installons et réparons toutes marques.</p>
+        <p class="text-slate-600 mb-5">Une solution sur mesure pour faciliter vos accès au quotidien.</p>
+        <ul class="space-y-2 text-sm text-slate-700">
+          <li class="flex gap-2"><span class="text-accent-500">✓</span> Pose de portail automatique</li>
+          <li class="flex gap-2"><span class="text-accent-500">✓</span> Motorisation battante ou coulissante</li>
+          <li class="flex gap-2"><span class="text-accent-500">✓</span> Porte de garage motorisée</li>
+          <li class="flex gap-2"><span class="text-accent-500">✓</span> Réparation et maintenance</li>
+          <li class="flex gap-2"><span class="text-accent-500">✓</span> Télécommandes et accessoires</li>
+          <li class="flex gap-2"><span class="text-accent-500">✓</span> Mise en sécurité</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="apropos" class="py-20 bg-brand-900 text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+    <div>
+      <p class="text-accent-500 font-semibold uppercase tracking-wider text-sm">Qui sommes-nous</p>
+      <h2 class="text-3xl sm:text-4xl font-extrabold mt-2 mb-6">Un artisan local au service des Charentais</h2>
+      <p class="text-blue-100 mb-4">
+        Dan'Elec, c'est avant tout l'histoire d'un artisan passionné, Dany Dupin, installé à Angoulême et engagé
+        auprès des habitants de la Charente. Depuis ses débuts, l'entreprise s'attache à proposer un service
+        humain, fiable et de qualité.
+      </p>
+      <p class="text-blue-100 mb-8">
+        Que vous soyez propriétaire, locataire ou gestionnaire de biens, vous bénéficiez de conseils clairs,
+        de devis transparents et d'un travail soigné, du début à la fin du chantier.
+      </p>
+      <div class="grid grid-cols-3 gap-6">
+        <div>
+          <p class="text-3xl font-extrabold text-accent-500">100%</p>
+          <p class="text-sm text-blue-100 mt-1">Local</p>
+        </div>
+        <div>
+          <p class="text-3xl font-extrabold text-accent-500">A-Z</p>
+          <p class="text-sm text-blue-100 mt-1">Services complets</p>
+        </div>
+        <div>
+          <p class="text-3xl font-extrabold text-accent-500">★★★</p>
+          <p class="text-sm text-blue-100 mt-1">Travail soigné</p>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white/5 border border-white/10 rounded-2xl p-8">
+      <h3 class="text-xl font-bold mb-4">Pourquoi nous choisir ?</h3>
+      <ul class="space-y-4">
+        <li class="flex gap-3"><span class="text-accent-500 text-xl">✓</span><div><p class="font-semibold">Proximité</p><p class="text-sm text-blue-100">Basé à Angoulême, nous intervenons rapidement dans toute la Charente.</p></div></li>
+        <li class="flex gap-3"><span class="text-accent-500 text-xl">✓</span><div><p class="font-semibold">Expérience</p><p class="text-sm text-blue-100">Une expertise reconnue en électricité, chauffage et automatismes.</p></div></li>
+        <li class="flex gap-3"><span class="text-accent-500 text-xl">✓</span><div><p class="font-semibold">Transparence</p><p class="text-sm text-blue-100">Devis gratuit, tarifs clairs et conseils honnêtes.</p></div></li>
+        <li class="flex gap-3"><span class="text-accent-500 text-xl">✓</span><div><p class="font-semibold">Qualité</p><p class="text-sm text-blue-100">Du matériel fiable et un travail réalisé dans les règles de l'art.</p></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-20 bg-slate-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12">
+    <div>
+      <p class="text-accent-600 font-semibold uppercase tracking-wider text-sm">Contact</p>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-900 mt-2 mb-6">Demandez votre devis gratuit</h2>
+      <p class="text-slate-600 mb-8">
+        Vous avez un projet ou une panne à signaler ? Contactez Dan'Elec pour un devis gratuit ou pour
+        prendre rendez-vous. Nous vous répondrons dans les meilleurs délais.
+      </p>
+      <div class="space-y-5">
+        <div class="flex items-start gap-4">
+          <div class="w-11 h-11 rounded-lg bg-brand-100 text-brand-600 grid place-items-center text-xl">📍</div>
+          <div><p class="font-semibold text-brand-900">Adresse</p><p class="text-slate-600">Angoulême, 16000 – Charente</p></div>
+        </div>
+        <div class="flex items-start gap-4">
+          <div class="w-11 h-11 rounded-lg bg-brand-100 text-brand-600 grid place-items-center text-xl">📞</div>
+          <div><p class="font-semibold text-brand-900">Téléphone</p><p class="text-slate-600">Sur demande – contactez-nous via le formulaire</p></div>
+        </div>
+        <div class="flex items-start gap-4">
+          <div class="w-11 h-11 rounded-lg bg-brand-100 text-brand-600 grid place-items-center text-xl">🕒</div>
+          <div><p class="font-semibold text-brand-900">Disponibilité</p><p class="text-slate-600">Du lundi au vendredi, sur rendez-vous</p></div>
+        </div>
+      </div>
+    </div>
+
+    <form class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 space-y-5" onsubmit="event.preventDefault(); alert('Merci ! Votre message a bien été pris en compte.'); this.reset();">
+      <div>
+        <label class="block text-sm font-semibold text-brand-900 mb-1">Nom complet</label>
+        <input type="text" required class="w-full border border-slate-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-500" placeholder="Votre nom" />
+      </div>
+      <div class="grid sm:grid-cols-2 gap-5">
+        <div>
+          <label class="block text-sm font-semibold text-brand-900 mb-1">Téléphone</label>
+          <input type="tel" required class="w-full border border-slate-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-500" placeholder="06 00 00 00 00" />
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-brand-900 mb-1">Email</label>
+          <input type="email" required class="w-full border border-slate-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-500" placeholder="vous@email.fr" />
+        </div>
+      </div>
+      <div>
+        <label class="block text-sm font-semibold text-brand-900 mb-1">Message</label>
+        <textarea required rows="5" class="w-full border border-slate-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-500" placeholder="Décrivez votre projet ou votre besoin..."></textarea>
+      </div>
+      <button type="submit" class="w-full bg-accent-500 hover:bg-accent-600 text-white font-semibold py-3 rounded-lg shadow-sm transition">Envoyer ma demande</button>
+      <p class="text-xs text-slate-500 text-center">Vos données restent confidentielles et ne sont utilisées que pour vous recontacter.</p>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-brand-900 text-blue-100 py-10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-8">
+    <div>
+      <div class="flex items-center gap-2 mb-3">
+        <div class="w-9 h-9 rounded-lg bg-accent-500 text-white grid place-items-center font-bold">D</div>
+        <p class="font-extrabold text-white text-lg">Dan'Elec</p>
+      </div>
+      <p class="text-sm">Dany Dupin – Artisan électricien à Angoulême, Charente. Électricité, chauffage, climatisation et automatismes de portails.</p>
+    </div>
+    <div>
+      <h4 class="text-white font-semibold mb-3">Contact</h4>
+      <ul class="text-sm space-y-1">
+        <li>📍 Angoulême, 16000</li>
+        <li>📞 Sur demande</li>
+        <li><a href="#contact" class="hover:text-accent-500">Formulaire de contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-white font-semibold mb-3">Navigation</h4>
+      <ul class="text-sm space-y-1">
+        <li><a href="#accueil" class="hover:text-accent-500">Accueil</a></li>
+        <li><a href="#services" class="hover:text-accent-500">Services</a></li>
+        <li><a href="#apropos" class="hover:text-accent-500">À propos</a></li>
+        <li><a href="#contact" class="hover:text-accent-500">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 pt-6 border-t border-white/10 text-xs text-blue-200 flex flex-col sm:flex-row justify-between gap-2">
+    <p>© 2026 Dan'Elec – Dany Dupin Électricien. Tous droits réservés.</p>
+    <p>Mentions légales · Politique de confidentialité</p>
+  </div>
+</footer>
+
+<script>
+  const btn = document.getElementById('menuBtn');
+  const menu = document.getElementById('mobileMenu');
+  btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.add('hidden')));
+</script>
+</body>
+</html>
